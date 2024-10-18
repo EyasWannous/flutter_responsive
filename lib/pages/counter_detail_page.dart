@@ -25,13 +25,14 @@ class CounterDetailPage extends StatelessWidget {
               'You have pushed the button this many times:',
             ),
             ListenableBuilder(
-                listenable: notifier,
-                builder: (context, child) {
-                  return Text(
-                    '${notifier.selectedCounter.value}',
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  );
-                }),
+              listenable: notifier,
+              builder: (context, child) {
+                return Text(
+                  '${notifier.selectedCounter.value}',
+                  style: Theme.of(context).textTheme.headlineMedium,
+                );
+              },
+            ),
           ],
         ),
       ),
